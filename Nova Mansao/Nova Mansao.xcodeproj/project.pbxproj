@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D782B32200A8A5300028088 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */; };
+		1D782B34200A8A6A00028088 /* PizzaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */; };
+		1D782B36200A8C8800028088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D782B35200A8C8800028088 /* Main.storyboard */; };
+		1D782B39200AA1B700028088 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B38200AA1B700028088 /* Pizza.swift */; };
+		1D782B3B200AA1C500028088 /* U.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B3A200AA1C500028088 /* U.swift */; };
+		1D782B3D200AA2D200028088 /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B3C200AA2D200028088 /* Ingrediente.swift */; };
 		1DEAE15920080BEE0034D82A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE15820080BEE0034D82A /* AppDelegate.swift */; };
 		1DEAE16020080BEE0034D82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE15F20080BEE0034D82A /* Assets.xcassets */; };
 		1DEAE16320080BEE0034D82A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE16120080BEE0034D82A /* LaunchScreen.storyboard */; };
 		1DEAE16B20080C2D0034D82A /* Pizza.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE16A20080C2D0034D82A /* Pizza.storyboard */; };
-		1DEAE16D20080C3E0034D82A /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEAE16C20080C3E0034D82A /* PizzaViewController.swift */; };
+		1DEAE17420080F5F0034D82A /* Refeicao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE17320080F5F0034D82A /* Refeicao.storyboard */; };
+		1DEAE17620080F710034D82A /* AlaCarte.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE17520080F710034D82A /* AlaCarte.storyboard */; };
+		1DEAE17820080F7F0034D82A /* Bebidas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE17720080F7F0034D82A /* Bebidas.storyboard */; };
+		1DEAE17A20080F890034D82A /* Sobre.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE17920080F890034D82A /* Sobre.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewController.swift; sourceTree = "<group>"; };
+		1D782B35200A8C8800028088 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D782B38200AA1B700028088 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		1D782B3A200AA1C500028088 /* U.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U.swift; sourceTree = "<group>"; };
+		1D782B3C200AA2D200028088 /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
 		1DEAE15520080BED0034D82A /* Nova Mansao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nova Mansao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEAE15820080BEE0034D82A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DEAE15F20080BEE0034D82A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DEAE16220080BEE0034D82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DEAE16420080BEE0034D82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DEAE16A20080C2D0034D82A /* Pizza.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pizza.storyboard; sourceTree = "<group>"; };
-		1DEAE16C20080C3E0034D82A /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
+		1DEAE17320080F5F0034D82A /* Refeicao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Refeicao.storyboard; sourceTree = "<group>"; };
+		1DEAE17520080F710034D82A /* AlaCarte.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlaCarte.storyboard; sourceTree = "<group>"; };
+		1DEAE17720080F7F0034D82A /* Bebidas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bebidas.storyboard; sourceTree = "<group>"; };
+		1DEAE17920080F890034D82A /* Sobre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sobre.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D782B37200AA1A400028088 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				1D782B38200AA1B700028088 /* Pizza.swift */,
+				1D782B3C200AA2D200028088 /* Ingrediente.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
 		1DEAE14C20080BED0034D82A = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +81,15 @@
 		1DEAE15720080BEE0034D82A /* Nova Mansao */ = {
 			isa = PBXGroup;
 			children = (
+				1D782B37200AA1A400028088 /* Modelo */,
+				1DEAE17020080EF80034D82A /* Cells */,
 				1DEAE16F20080C4A0034D82A /* Controllers */,
 				1DEAE16E20080C430034D82A /* Storyboard */,
 				1DEAE15820080BEE0034D82A /* AppDelegate.swift */,
 				1DEAE15F20080BEE0034D82A /* Assets.xcassets */,
 				1DEAE16120080BEE0034D82A /* LaunchScreen.storyboard */,
 				1DEAE16420080BEE0034D82A /* Info.plist */,
+				1D782B3A200AA1C500028088 /* U.swift */,
 			);
 			path = "Nova Mansao";
 			sourceTree = "<group>";
@@ -68,6 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				1DEAE16A20080C2D0034D82A /* Pizza.storyboard */,
+				1DEAE17320080F5F0034D82A /* Refeicao.storyboard */,
+				1DEAE17520080F710034D82A /* AlaCarte.storyboard */,
+				1DEAE17720080F7F0034D82A /* Bebidas.storyboard */,
+				1DEAE17920080F890034D82A /* Sobre.storyboard */,
+				1D782B35200A8C8800028088 /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -75,9 +110,17 @@
 		1DEAE16F20080C4A0034D82A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1DEAE16C20080C3E0034D82A /* PizzaViewController.swift */,
+				1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1DEAE17020080EF80034D82A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +182,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEAE17420080F5F0034D82A /* Refeicao.storyboard in Resources */,
+				1DEAE17A20080F890034D82A /* Sobre.storyboard in Resources */,
+				1DEAE17620080F710034D82A /* AlaCarte.storyboard in Resources */,
+				1D782B36200A8C8800028088 /* Main.storyboard in Resources */,
 				1DEAE16B20080C2D0034D82A /* Pizza.storyboard in Resources */,
+				1DEAE17820080F7F0034D82A /* Bebidas.storyboard in Resources */,
 				1DEAE16320080BEE0034D82A /* LaunchScreen.storyboard in Resources */,
 				1DEAE16020080BEE0034D82A /* Assets.xcassets in Resources */,
 			);
@@ -152,8 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D782B39200AA1B700028088 /* Pizza.swift in Sources */,
+				1D782B3B200AA1C500028088 /* U.swift in Sources */,
+				1D782B32200A8A5300028088 /* PizzaTableViewCell.swift in Sources */,
+				1D782B34200A8A6A00028088 /* PizzaTableViewController.swift in Sources */,
+				1D782B3D200AA2D200028088 /* Ingrediente.swift in Sources */,
 				1DEAE15920080BEE0034D82A /* AppDelegate.swift in Sources */,
-				1DEAE16D20080C3E0034D82A /* PizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.appledeveloperacademy.Nova-Mansao";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.appledeveloperacademy.Nova-Mansao";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

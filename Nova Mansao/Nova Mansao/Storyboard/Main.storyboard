@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="el8-Tp-CtS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sobre-->
+        <scene sceneID="Irp-2A-VsU">
+            <objects>
+                <navigationController id="AHV-Ca-9u0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sobre" image="sobre-icon" id="scv-dD-AQs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s6t-Of-YuK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="21h-7L-miw" kind="relationship" relationship="rootViewController" id="h8r-Kr-x4m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Rz-5Q-uKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="215"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kQo-fp-Syv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="el8-Tp-CtS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w5z-U9-jLO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GCe-Rr-0Mu" kind="relationship" relationship="viewControllers" id="bJ4-gH-hNc"/>
+                        <segue destination="6kD-jD-xU4" kind="relationship" relationship="viewControllers" id="IGx-wl-2t4"/>
+                        <segue destination="eJV-WB-gqO" kind="relationship" relationship="viewControllers" id="AK1-Pi-KCS"/>
+                        <segue destination="lgF-Jj-fo8" kind="relationship" relationship="viewControllers" id="VLx-Ma-yEO"/>
+                        <segue destination="AHV-Ca-9u0" kind="relationship" relationship="viewControllers" id="jsl-FE-GCL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgN-F2-5ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="120"/>
+        </scene>
+        <!--Nova Mansão-->
+        <scene sceneID="4AT-Me-vJP">
+            <objects>
+                <navigationController title="Nova Mansão" id="eJV-WB-gqO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pizza" image="pizza-icon" id="Fsm-ah-EFD"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="OH4-o6-Ob6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.39067925349999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="V1U-5U-9e6" kind="relationship" relationship="rootViewController" id="guQ-as-jhT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inc-jx-H5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="960"/>
+        </scene>
+        <!--Pizza-->
+        <scene sceneID="9Oh-ym-cqm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pizza" id="V1U-5U-9e6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KFX-4v-A67"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ia3-OW-TXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="961"/>
+        </scene>
+        <!--Refeição-->
+        <scene sceneID="vY3-FA-KWd">
+            <objects>
+                <navigationController id="GCe-Rr-0Mu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Refeição" image="refeicao-icon" id="WSB-fV-V9l"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yiT-Jy-C8H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hrZ-ge-RiT" kind="relationship" relationship="rootViewController" id="ac9-mw-jOK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsd-tl-sfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3234" y="916"/>
+        </scene>
+        <!--Refeicao-->
+        <scene sceneID="SoU-yS-75n">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MX4-MT-1Cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Refeicao" id="hrZ-ge-RiT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Ld-dv-x0P"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-2634" y="916"/>
+        </scene>
+        <!--Sobre-->
+        <scene sceneID="sip-bf-CS3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Sobre" id="21h-7L-miw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BeB-Ru-Eoy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpz-t7-Ong" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="280"/>
+        </scene>
+        <!--Bebida-->
+        <scene sceneID="rk2-7p-D6k">
+            <objects>
+                <navigationController id="lgF-Jj-fo8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bebida" image="bebida-icon" id="HgS-ak-OrW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V5c-YW-A09">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8BQ-VX-i0C" kind="relationship" relationship="rootViewController" id="i6P-iv-MGI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aiF-iK-vPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="961"/>
+        </scene>
+        <!--Bebidas-->
+        <scene sceneID="6VQ-l4-1D9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bebidas" id="8BQ-VX-i0C" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RAB-uj-D1Y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XKu-wJ-O9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224" y="1071"/>
+        </scene>
+        <!--A la Carte-->
+        <scene sceneID="56o-s7-vTN">
+            <objects>
+                <navigationController id="6kD-jD-xU4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="A la Carte" image="alacarte-icon" id="kby-pZ-scZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lvt-Vq-KEu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tyW-cd-X6f" kind="relationship" relationship="rootViewController" id="zXr-94-85C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="00x-Cg-4hR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2068" y="997"/>
+        </scene>
+        <!--AlaCarte-->
+        <scene sceneID="w7O-TH-07b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AlaCarte" id="tyW-cd-X6f" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eZk-Wf-uaN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-56-b1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1497" y="996"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alacarte-icon" width="48" height="34"/>
+        <image name="bebida-icon" width="48" height="34"/>
+        <image name="pizza-icon" width="48" height="34"/>
+        <image name="refeicao-icon" width="48" height="34"/>
+        <image name="sobre-icon" width="48" height="34"/>
+    </resources>
+</document>
