@@ -1,37 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Gp-Hb-lXb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cpq-Jy-sZm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="8cv-gh-cjv">
+        <!--Nova Mansão-->
+        <scene sceneID="r1N-4m-Tvf">
             <objects>
-                <viewController id="8Gp-Hb-lXb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="udy-Jr-dU9">
+                <tableViewController title="Nova Mansão" id="cpq-Jy-sZm" customClass="SobreTableViewController" customModule="Nova_Mansao" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yDA-Y9-bpW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-sP-hrc">
-                                <rect key="frame" x="146" y="290" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6aM-nE-cNL"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dDl-H2-sbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sobrecell" rowHeight="63" id="4uW-IW-Ahm" customClass="SobreTableViewCell" customModule="Nova_Mansao" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="63"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4uW-IW-Ahm" id="CYs-Ip-az8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sobre-icon" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-hU-RMh">
+                                            <rect key="frame" x="8" y="0.0" width="75" height="62.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09h00 até 01h00" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-rJ-lqT">
+                                            <rect key="frame" x="93" y="-1" width="274" height="63"/>
+                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                            <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="KHP-hU-RMh" firstAttribute="leading" secondItem="CYs-Ip-az8" secondAttribute="leadingMargin" id="2Dw-Bh-d1x"/>
+                                        <constraint firstItem="jsb-rJ-lqT" firstAttribute="centerY" secondItem="KHP-hU-RMh" secondAttribute="centerY" id="M9J-e0-Oy0"/>
+                                        <constraint firstItem="jsb-rJ-lqT" firstAttribute="leading" secondItem="KHP-hU-RMh" secondAttribute="trailing" constant="10" id="Wyr-uz-2MM"/>
+                                        <constraint firstItem="KHP-hU-RMh" firstAttribute="height" secondItem="CYs-Ip-az8" secondAttribute="height" id="cK0-b2-w21"/>
+                                        <constraint firstItem="KHP-hU-RMh" firstAttribute="width" secondItem="CYs-Ip-az8" secondAttribute="width" multiplier="0.2" id="cyj-E2-fcv"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jsb-rJ-lqT" secondAttribute="trailing" id="eDy-I1-Ds3"/>
+                                        <constraint firstItem="KHP-hU-RMh" firstAttribute="top" secondItem="CYs-Ip-az8" secondAttribute="top" id="fLX-Vq-2Oy"/>
+                                        <constraint firstItem="jsb-rJ-lqT" firstAttribute="height" secondItem="KHP-hU-RMh" secondAttribute="height" id="xUV-Cc-D0a"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imagem" destination="KHP-hU-RMh" id="6Kn-Pn-DeQ"/>
+                                    <outlet property="texto" destination="jsb-rJ-lqT" id="K1j-Ou-a0T"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cpq-Jy-sZm" id="v4E-HC-hR6"/>
+                            <outlet property="delegate" destination="cpq-Jy-sZm" id="YpD-fJ-YzW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFb-CB-GHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="209"/>
+            <point key="canvasLocation" x="533.60000000000002" y="174.96251874062969"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sobre-icon" width="48" height="34"/>
+    </resources>
 </document>

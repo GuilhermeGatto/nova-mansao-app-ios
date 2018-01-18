@@ -13,9 +13,10 @@
             <objects>
                 <navigationController id="AHV-Ca-9u0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sobre" image="sobre-icon" id="scv-dD-AQs"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s6t-Of-YuK">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="s6t-Of-YuK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="21h-7L-miw" kind="relationship" relationship="rootViewController" id="h8r-Kr-x4m"/>
@@ -25,12 +26,13 @@
             </objects>
             <point key="canvasLocation" x="785" y="215"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="kQo-fp-Syv">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="el8-Tp-CtS" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="el8-Tp-CtS" customClass="MainTabBarController" customModule="Nova_Mansao" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w5z-U9-jLO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,9 +82,10 @@
             <objects>
                 <navigationController id="GCe-Rr-0Mu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Refeição" image="refeicao-icon" id="WSB-fV-V9l"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yiT-Jy-C8H">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yiT-Jy-C8H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="hrZ-ge-RiT" kind="relationship" relationship="rootViewController" id="ac9-mw-jOK"/>
@@ -95,10 +98,10 @@
         <!--Refeicao-->
         <scene sceneID="SoU-yS-75n">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MX4-MT-1Cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Refeicao" id="hrZ-ge-RiT" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0Ld-dv-x0P"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MX4-MT-1Cd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2634" y="916"/>
         </scene>
@@ -117,9 +120,11 @@
             <objects>
                 <navigationController id="lgF-Jj-fo8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bebida" image="bebida-icon" id="HgS-ak-OrW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V5c-YW-A09">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="V5c-YW-A09">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="8BQ-VX-i0C" kind="relationship" relationship="rootViewController" id="i6P-iv-MGI"/>
@@ -144,9 +149,10 @@
             <objects>
                 <navigationController id="6kD-jD-xU4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="A la Carte" image="alacarte-icon" id="kby-pZ-scZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lvt-Vq-KEu">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Lvt-Vq-KEu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="tyW-cd-X6f" kind="relationship" relationship="rootViewController" id="zXr-94-85C"/>

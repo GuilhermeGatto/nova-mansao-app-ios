@@ -11,10 +11,6 @@ import UIKit
 class PizzaTableViewController: UITableViewController {
     
     var pizzas : [Pizza] = []
-    
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +24,7 @@ class PizzaTableViewController: UITableViewController {
         pizzas.append(Pizza(nome: "Calabresa Super", ingredientes: [Ingrediente(nome: "mussarela"), Ingrediente(nome: "calabresa"),Ingrediente(nome: "ovo"),Ingrediente(nome: "catupiry"),Ingrediente(nome: "tomate"),Ingrediente(nome: "parmesão") ], tipo: .especial2))
          pizzas.append(Pizza(nome: "Romeu e Julieta", ingredientes: [Ingrediente(nome: " mussarela"), Ingrediente(nome: "goiabada") ], tipo: .doce))
     }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 7
     }
@@ -36,7 +33,7 @@ class PizzaTableViewController: UITableViewController {
         return 1
     }
 
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pizzacell", for: indexPath) as! PizzaTableViewCell
 
