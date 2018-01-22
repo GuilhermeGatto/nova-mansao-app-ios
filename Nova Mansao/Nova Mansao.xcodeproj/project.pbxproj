@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06845090D88FAA07F242C39F /* Pods_Nova_Mansao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5079CE1BD0D159B9E2E0D9 /* Pods_Nova_Mansao.framework */; };
 		1D782B32200A8A5300028088 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */; };
 		1D782B34200A8A6A00028088 /* PizzaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */; };
 		1D782B36200A8C8800028088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D782B35200A8C8800028088 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D7526A420163490005ED9F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
 		1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewController.swift; sourceTree = "<group>"; };
 		1D782B35200A8C8800028088 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,9 @@
 		1DEAE17520080F710034D82A /* AlaCarte.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlaCarte.storyboard; sourceTree = "<group>"; };
 		1DEAE17720080F7F0034D82A /* Bebidas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bebidas.storyboard; sourceTree = "<group>"; };
 		1DEAE17920080F890034D82A /* Sobre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sobre.storyboard; sourceTree = "<group>"; };
+		425CDA09D7B3411A33CC9A3F /* Pods-Nova Mansao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova Mansao.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova Mansao/Pods-Nova Mansao.release.xcconfig"; sourceTree = "<group>"; };
+		737DBED368C16E1CAA35F271 /* Pods-Nova Mansao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova Mansao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova Mansao/Pods-Nova Mansao.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5079CE1BD0D159B9E2E0D9 /* Pods_Nova_Mansao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nova_Mansao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06845090D88FAA07F242C39F /* Pods_Nova_Mansao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 			children = (
 				1DEAE15720080BEE0034D82A /* Nova Mansao */,
 				1DEAE15620080BED0034D82A /* Products */,
+				D6BEC44E9C97A398C4C1E14F /* Pods */,
+				F9880D9003F2AA34989B4115 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +104,7 @@
 				1DEAE16F20080C4A0034D82A /* Controllers */,
 				1DEAE16E20080C430034D82A /* Storyboard */,
 				1DEAE15820080BEE0034D82A /* AppDelegate.swift */,
+				1D7526A420163490005ED9F6 /* GoogleService-Info.plist */,
 				1DEAE15F20080BEE0034D82A /* Assets.xcassets */,
 				1DEAE16120080BEE0034D82A /* LaunchScreen.storyboard */,
 				1DEAE16420080BEE0034D82A /* Info.plist */,
@@ -138,6 +147,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		D6BEC44E9C97A398C4C1E14F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				737DBED368C16E1CAA35F271 /* Pods-Nova Mansao.debug.xcconfig */,
+				425CDA09D7B3411A33CC9A3F /* Pods-Nova Mansao.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9880D9003F2AA34989B4115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5079CE1BD0D159B9E2E0D9 /* Pods_Nova_Mansao.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEAE16720080BEE0034D82A /* Build configuration list for PBXNativeTarget "Nova Mansao" */;
 			buildPhases = (
+				CBAF360A102949B38A0B1F22 /* [CP] Check Pods Manifest.lock */,
 				1DEAE15120080BED0034D82A /* Sources */,
 				1DEAE15220080BED0034D82A /* Frameworks */,
 				1DEAE15320080BED0034D82A /* Resources */,
+				4D6BC4507B265022FE041F6A /* [CP] Embed Pods Frameworks */,
+				282CDAE0485C94C2108CA84F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +238,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		282CDAE0485C94C2108CA84F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nova Mansao/Pods-Nova Mansao-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6BC4507B265022FE041F6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nova Mansao/Pods-Nova Mansao-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAF360A102949B38A0B1F22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1DEAE15120080BED0034D82A /* Sources */ = {
@@ -352,6 +429,7 @@
 		};
 		1DEAE16820080BEE0034D82A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 737DBED368C16E1CAA35F271 /* Pods-Nova Mansao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +445,7 @@
 		};
 		1DEAE16920080BEE0034D82A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425CDA09D7B3411A33CC9A3F /* Pods-Nova Mansao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
