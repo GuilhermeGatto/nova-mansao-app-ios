@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		06845090D88FAA07F242C39F /* Pods_Nova_Mansao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5079CE1BD0D159B9E2E0D9 /* Pods_Nova_Mansao.framework */; };
+		1D235E6620194FCB00DD32AE /* Bebida.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D235E6520194FCB00DD32AE /* Bebida.swift */; };
+		1D235E682019512000DD32AE /* RefeicaoFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D235E672019512000DD32AE /* RefeicaoFirebase.swift */; };
+		1D235E6A2019512E00DD32AE /* BebidaFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D235E692019512E00DD32AE /* BebidaFireBase.swift */; };
+		1D235E6C201951D000DD32AE /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D235E6B201951D000DD32AE /* Refeicao.swift */; };
+		1D7526A720163BDE005ED9F6 /* PizzaFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7526A620163BDE005ED9F6 /* PizzaFireBase.swift */; };
+		1D7526A920168AEB005ED9F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D7526A8201689FC005ED9F6 /* GoogleService-Info.plist */; };
+		1D7526AB201941D9005ED9F6 /* ALaCarteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7526AA201941D9005ED9F6 /* ALaCarteTableViewController.swift */; };
+		1D7526AD20194394005ED9F6 /* RefeicaoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7526AC20194394005ED9F6 /* RefeicaoTableViewController.swift */; };
+		1D7526AF20194657005ED9F6 /* ALaCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7526AE20194657005ED9F6 /* ALaCarte.swift */; };
+		1D7526B120194761005ED9F6 /* ALaCarteFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7526B020194761005ED9F6 /* ALaCarteFireBase.swift */; };
 		1D782B32200A8A5300028088 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */; };
 		1D782B34200A8A6A00028088 /* PizzaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */; };
 		1D782B36200A8C8800028088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D782B35200A8C8800028088 /* Main.storyboard */; };
@@ -30,7 +40,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D7526A420163490005ED9F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1D235E6520194FCB00DD32AE /* Bebida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bebida.swift; sourceTree = "<group>"; };
+		1D235E672019512000DD32AE /* RefeicaoFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoFirebase.swift; sourceTree = "<group>"; };
+		1D235E692019512E00DD32AE /* BebidaFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BebidaFireBase.swift; sourceTree = "<group>"; };
+		1D235E6B201951D000DD32AE /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		1D7526A620163BDE005ED9F6 /* PizzaFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaFireBase.swift; sourceTree = "<group>"; };
+		1D7526A8201689FC005ED9F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1D7526AA201941D9005ED9F6 /* ALaCarteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarteTableViewController.swift; sourceTree = "<group>"; };
+		1D7526AC20194394005ED9F6 /* RefeicaoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicaoTableViewController.swift; sourceTree = "<group>"; };
+		1D7526AE20194657005ED9F6 /* ALaCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarte.swift; sourceTree = "<group>"; };
+		1D7526B020194761005ED9F6 /* ALaCarteFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALaCarteFireBase.swift; sourceTree = "<group>"; };
 		1D782B31200A8A5300028088 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
 		1D782B33200A8A6A00028088 /* PizzaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewController.swift; sourceTree = "<group>"; };
 		1D782B35200A8C8800028088 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -69,13 +88,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D782B37200AA1A400028088 /* Modelo */ = {
+		1D7526A520163BBF005ED9F6 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				1D7526A620163BDE005ED9F6 /* PizzaFireBase.swift */,
+				1D7526B020194761005ED9F6 /* ALaCarteFireBase.swift */,
+				1D235E672019512000DD32AE /* RefeicaoFirebase.swift */,
+				1D235E692019512E00DD32AE /* BebidaFireBase.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		1D782B37200AA1A400028088 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				1D782B38200AA1B700028088 /* Pizza.swift */,
 				1D782B3C200AA2D200028088 /* Ingrediente.swift */,
+				1D7526AE20194657005ED9F6 /* ALaCarte.swift */,
+				1D235E6520194FCB00DD32AE /* Bebida.swift */,
+				1D235E6B201951D000DD32AE /* Refeicao.swift */,
 			);
-			path = Modelo;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1DEAE14C20080BED0034D82A = {
@@ -99,15 +132,16 @@
 		1DEAE15720080BEE0034D82A /* Nova Mansao */ = {
 			isa = PBXGroup;
 			children = (
-				1D782B37200AA1A400028088 /* Modelo */,
+				1D7526A520163BBF005ED9F6 /* DataBase */,
+				1D782B37200AA1A400028088 /* Model */,
 				1DEAE17020080EF80034D82A /* Cells */,
 				1DEAE16F20080C4A0034D82A /* Controllers */,
 				1DEAE16E20080C430034D82A /* Storyboard */,
 				1DEAE15820080BEE0034D82A /* AppDelegate.swift */,
-				1D7526A420163490005ED9F6 /* GoogleService-Info.plist */,
 				1DEAE15F20080BEE0034D82A /* Assets.xcassets */,
 				1DEAE16120080BEE0034D82A /* LaunchScreen.storyboard */,
 				1DEAE16420080BEE0034D82A /* Info.plist */,
+				1D7526A8201689FC005ED9F6 /* GoogleService-Info.plist */,
 				1D782B3A200AA1C500028088 /* U.swift */,
 			);
 			path = "Nova Mansao";
@@ -133,6 +167,8 @@
 				1DA1E3D2200D6F8E0042AD27 /* BebidaTableViewController.swift */,
 				1DA1E3D6200D77FC0042AD27 /* SobreTableViewController.swift */,
 				1DA1E3D8200D7DD10042AD27 /* MainTabBarController.swift */,
+				1D7526AA201941D9005ED9F6 /* ALaCarteTableViewController.swift */,
+				1D7526AC20194394005ED9F6 /* RefeicaoTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7526A920168AEB005ED9F6 /* GoogleService-Info.plist in Resources */,
 				1DEAE17420080F5F0034D82A /* Refeicao.storyboard in Resources */,
 				1DEAE17A20080F890034D82A /* Sobre.storyboard in Resources */,
 				1DEAE17620080F710034D82A /* AlaCarte.storyboard in Resources */,
@@ -293,16 +330,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA1E3D3200D6F8E0042AD27 /* BebidaTableViewController.swift in Sources */,
+				1D7526AD20194394005ED9F6 /* RefeicaoTableViewController.swift in Sources */,
 				1DA1E3D5200D77760042AD27 /* SobreTableViewCell.swift in Sources */,
 				1DA1E3D9200D7DD10042AD27 /* MainTabBarController.swift in Sources */,
 				1D782B39200AA1B700028088 /* Pizza.swift in Sources */,
+				1D7526AB201941D9005ED9F6 /* ALaCarteTableViewController.swift in Sources */,
 				1D782B3B200AA1C500028088 /* U.swift in Sources */,
+				1D7526AF20194657005ED9F6 /* ALaCarte.swift in Sources */,
 				1D782B32200A8A5300028088 /* PizzaTableViewCell.swift in Sources */,
+				1D235E6A2019512E00DD32AE /* BebidaFireBase.swift in Sources */,
 				1D782B34200A8A6A00028088 /* PizzaTableViewController.swift in Sources */,
+				1D235E6C201951D000DD32AE /* Refeicao.swift in Sources */,
 				1D782B3D200AA2D200028088 /* Ingrediente.swift in Sources */,
 				1DEAE15920080BEE0034D82A /* AppDelegate.swift in Sources */,
+				1D7526A720163BDE005ED9F6 /* PizzaFireBase.swift in Sources */,
 				1DA1E3D1200D6F7D0042AD27 /* BebidaTableViewCell.swift in Sources */,
+				1D235E6620194FCB00DD32AE /* Bebida.swift in Sources */,
 				1DA1E3D7200D77FC0042AD27 /* SobreTableViewController.swift in Sources */,
+				1D235E682019512000DD32AE /* RefeicaoFirebase.swift in Sources */,
+				1D7526B120194761005ED9F6 /* ALaCarteFireBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
