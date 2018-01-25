@@ -39,9 +39,11 @@ class SobreTableViewController: UITableViewController {
         
         switch indexPath.section {
         case 0: cell.texto.text = "11h00 até 01h00"
+                cell.imagem.image = #imageLiteral(resourceName: "time")
         case 1: cell.texto.text = "Rua Vereador Diego Pires de Campos, 300 Vila São Jorge - São Vicente"
+                    cell.imagem.image = #imageLiteral(resourceName: "location")
         case 2: cell.texto.text = telefones[indexPath.row]
-            
+                cell.imagem.image = #imageLiteral(resourceName: "call")
         default:
             print("erro")
         }
@@ -51,7 +53,7 @@ class SobreTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "Horario de atendimento"
+            return "Horário de atendimento"
         }else if section == 1 {
             return "Onde estamos"
         }else{
