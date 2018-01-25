@@ -33,12 +33,20 @@ enum TipoALaCarte: Int{
 }
 
 enum TipoBebida: Int {
-    case bebida = 0
-    case suco = 1
-    case dose = 2
-    case cerveja = 3
-    case destilado = 4
+    case refrigerante2l = 0
+    case refrigerante600ml = 1
+    case refrigeranteLata = 2
+    case agua = 3
+    case suco = 4
+    case energetico = 5
+    case cervejaLata = 6
+    case cerveja600ml = 7
+    case cervejaLongNeck = 8
+    case drink = 9
+    case dose = 10
+    case garrafa = 11
 }
+
 enum ALaCArteName: String{
     
     case e = "Espetão"

@@ -71,19 +71,19 @@ class PizzaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             
-            return pizzaP1.count == 0 ? 1 : pizzaP1.count
+            return pizzaP1.count
         }else if section == 1{
-            return pizzaP2.count == 0 ? 1 : pizzaP2.count
+            return pizzaP2.count
         }else if section == 2{
-            return pizzaP3.count == 0 ? 1 : pizzaP3.count
+            return pizzaP3.count
         }else if section == 3{
-            return pizzaP4.count == 0 ? 1 : pizzaP4.count
+            return pizzaP4.count
         }else if section == 4{
-            return pizzaE1.count == 0 ? 1 : pizzaE1.count
+            return pizzaE1.count
         }else if section == 5{
-            return pizzaE2.count == 0 ? 1 : pizzaE2.count
+            return pizzaE2.count
         }else if section == 6{
-            return pizzaD.count == 0 ? 1 : pizzaD.count
+            return pizzaD.count
         }else{
             return 0
         }

@@ -11,15 +11,28 @@ import UIKit
 class RefeicaoTableViewController: UITableViewController {
 
     var fitness: [Refeicao] = []
+    var executivo: [Refeicao] = []
+    var individual: [Refeicao] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.shadowImage = UIImage()
         
         
-        RefeicaoFirebase.getRefeicao { (refeicao) in
+        RefeicaoFirebase.getRefeicao { (refeicoes) in
             self.fitness = []
-            self.fitness = refeicao
+            self.executivo = []
+            self.individual = []
+            
+            for refeicao in refeicoes{
+                switch refeicao.tipo.rawValue {
+                case 0: self.fitness.append(refeicao)
+                case 1: self.executivo.append(refeicao)
+                case 2: self.individual.append(refeicao)
+                default:
+                    print("erro")
+                }
+            }
             
             self.tableView.reloadData()
             
@@ -40,20 +53,50 @@ class RefeicaoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return fitness.count
+        switch section {
+        case 0: return fitness.count
+        case 1: return executivo.count
+        case 2: return individual.count
+        default:
+            return 0
+        }
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "refeicaocell", for: indexPath) as! PizzaTableViewCell
         
-        cell.nome.text = fitness[indexPath.row].nome
-        cell.precoGrande.text = "R$ \(fitness[indexPath.row].preco)"
-        cell.ingredientes.text = ""
-        for ing in fitness[indexPath.row].ingredientes{
-            cell.ingredientes.text?.append("\(ing.nome), ")
+        
+        switch indexPath.section {
+        case 0:
+            cell.nome.text = fitness[indexPath.row].nome
+            cell.precoGrande.text = "R$ \(fitness[indexPath.row].preco)"
+            cell.ingredientes.text = ""
+            for ing in fitness[indexPath.row].ingredientes{
+                cell.ingredientes.text?.append("\(ing.nome), ")
+            }
+        case 1:
+            cell.nome.text = executivo[indexPath.row].nome
+            cell.precoGrande.text = "R$ \(executivo[indexPath.row].preco)"
+            cell.ingredientes.text = ""
+            for ing in executivo[indexPath.row].ingredientes{
+                cell.ingredientes.text?.append("\(ing.nome), ")
+            }
+        case 2:
+            cell.nome.text = individual[indexPath.row].nome
+            cell.precoGrande.text = "R$ \(individual[indexPath.row].preco)"
+            cell.ingredientes.text = ""
+            for ing in individual[indexPath.row].ingredientes{
+                cell.ingredientes.text?.append("\(ing.nome), ")
+            }
+        default:
+            print("xi")
         }
+        
+        
+        
+        
+        
         
         
         
@@ -70,7 +113,13 @@ class RefeicaoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Fitness"
+        switch section {
+        case 0: return "Fitness"
+        case 1: return "Executivo"
+        case 2: return "Individual"
+        default:
+            return "Nova mansão"
+        }
     }
 
 }

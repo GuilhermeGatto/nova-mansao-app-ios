@@ -10,6 +10,9 @@ import UIKit
 
 class SobreTableViewController: UITableViewController {
 
+    
+    var telefones = ["(13) 3561-3983", "(13) 3561-3984", "936*25075", "(13) 97404-4484"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -25,7 +28,7 @@ class SobreTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if section == 2{
-            return 3
+            return telefones.count
         }
         return 1
     }
@@ -33,12 +36,16 @@ class SobreTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sobrecell", for: indexPath) as! SobreTableViewCell
 
-        if indexPath.section == 1 {
-            cell.texto.text = "Rua Vereador Diego Pires de Campos, 300 Vila São Jorge - São Vicente"
-        }else if indexPath.section == 2 {
-            cell.texto.text = "+55 (13) 3333-3333"
+        
+        switch indexPath.section {
+        case 0: cell.texto.text = "11h00 até 01h00"
+        case 1: cell.texto.text = "Rua Vereador Diego Pires de Campos, 300 Vila São Jorge - São Vicente"
+        case 2: cell.texto.text = telefones[indexPath.row]
+            
+        default:
+            print("erro")
         }
-
+       
         return cell
     }
     

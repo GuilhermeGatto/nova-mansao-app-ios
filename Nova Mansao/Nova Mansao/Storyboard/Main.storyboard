@@ -144,11 +144,11 @@
             </objects>
             <point key="canvasLocation" x="1224" y="1071"/>
         </scene>
-        <!--A la Carte-->
+        <!--À la Carte-->
         <scene sceneID="56o-s7-vTN">
             <objects>
                 <navigationController id="6kD-jD-xU4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="A la Carte" image="alacarte-icon" id="kby-pZ-scZ"/>
+                    <tabBarItem key="tabBarItem" title="À la Carte" image="alacarte-icon" id="kby-pZ-scZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Lvt-Vq-KEu">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nova Mansão-->
+        <!--À La Carte-->
         <scene sceneID="qO1-fA-Lg6">
             <objects>
-                <tableViewController title="Nova Mansão" id="ArZ-ED-Jz7" customClass="ALaCarteTableViewController" customModule="Nova_Mansao" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="À La Carte" id="ArZ-ED-Jz7" customClass="ALaCarteTableViewController" customModule="Nova_Mansao" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JEN-xK-Yw9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFg-zT-QVZ">
                                             <rect key="frame" x="8" y="8" width="187.5" height="29.5"/>
-                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                             <color key="textColor" red="1" green="0.99993187189999999" blue="0.0066417069170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
