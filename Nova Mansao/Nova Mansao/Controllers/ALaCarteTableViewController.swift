@@ -104,8 +104,8 @@ class ALaCarteTableViewController: UITableViewController {
             
             let espetao = espetoes[indexPath.row]
             cell.nome.text = espetao.nome
-            cell.precoBroto.text = "R$ \(espetao.precoMeia)"
-            cell.precoGrande.text = "R$ \(espetao.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: espetao.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: espetao.precoInteira)
             cell.ingredientes.text = ""
             for ing in espetao.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -114,8 +114,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 1:
             let contra = contraFiles[indexPath.row]
             cell.nome.text = contra.nome
-            cell.precoBroto.text = "R$ \(contra.precoMeia)"
-            cell.precoGrande.text = "R$ \(contra.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: contra.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: contra.precoInteira)
             cell.ingredientes.text = ""
             for ing in contra.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -124,8 +124,8 @@ class ALaCarteTableViewController: UITableViewController {
             
             let comida = picanhas[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -134,8 +134,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 3:
             let comida = filesMignon[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -143,8 +143,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 4:
             let comida = costelas[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -152,8 +152,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 5:
             let comida = frangos[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -161,8 +161,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 6:
             let comida = porcoes[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -170,8 +170,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 7:
             let comida = peixes[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -179,8 +179,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 8:
             let comida = saladas[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
@@ -188,8 +188,8 @@ class ALaCarteTableViewController: UITableViewController {
         case 9:
             let comida = nordestinas[indexPath.row]
             cell.nome.text = comida.nome
-            cell.precoBroto.text = "R$ \(comida.precoMeia)"
-            cell.precoGrande.text = "R$ \(comida.precoInteira)"
+            cell.precoBroto.text = U.converteReal(valor: comida.precoMeia)
+            cell.precoGrande.text = U.converteReal(valor: comida.precoInteira)
             cell.ingredientes.text = ""
             for ing in comida.ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")

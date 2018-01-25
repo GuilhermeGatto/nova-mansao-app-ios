@@ -11,7 +11,7 @@ import UIKit
 class SobreTableViewController: UITableViewController {
 
     
-    var telefones = ["(13) 3561-3983", "(13) 3561-3984", "936*25075", "(13) 97404-4484"]
+    var telefones = ["(13) 3561-3983", "(13) 3561-3984", "(13) 97404-4484"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

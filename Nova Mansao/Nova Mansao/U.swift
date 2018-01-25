@@ -68,5 +68,11 @@ enum tipoRefeicao : Int {
 }
 class U {
     
+    static func converteReal(valor: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale.current
+        formatter.numberStyle = .currency
+        return formatter.string(from: NSNumber(value: valor)) ?? "R$ --,--"
+    }
     
 }

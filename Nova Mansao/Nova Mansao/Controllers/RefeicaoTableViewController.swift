@@ -70,21 +70,21 @@ class RefeicaoTableViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             cell.nome.text = fitness[indexPath.row].nome
-            cell.precoGrande.text = "R$ \(fitness[indexPath.row].preco)"
+            cell.precoGrande.text = U.converteReal(valor: fitness[indexPath.row].preco)
             cell.ingredientes.text = ""
             for ing in fitness[indexPath.row].ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
             }
         case 1:
             cell.nome.text = executivo[indexPath.row].nome
-            cell.precoGrande.text = "R$ \(executivo[indexPath.row].preco)"
+            cell.precoGrande.text = U.converteReal(valor: executivo[indexPath.row].preco)
             cell.ingredientes.text = ""
             for ing in executivo[indexPath.row].ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")
             }
         case 2:
             cell.nome.text = individual[indexPath.row].nome
-            cell.precoGrande.text = "R$ \(individual[indexPath.row].preco)"
+            cell.precoGrande.text = U.converteReal(valor: individual[indexPath.row].preco)
             cell.ingredientes.text = ""
             for ing in individual[indexPath.row].ingredientes{
                 cell.ingredientes.text?.append("\(ing.nome), ")

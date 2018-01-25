@@ -94,98 +94,87 @@ class PizzaTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pizzacell", for: indexPath) as! PizzaTableViewCell
 
         if indexPath.section == 0 {
-            
-            if pizzaP1.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
-                
+        
                 let pizza = pizzaP1[indexPath.row]
                 cell.nome.text = pizza.nome
                 cell.ingredientes.text = ""
-                cell.precoBroto.text = "R$ \(pizza.precoBroto)"
-                cell.precoGrande.text = "R$ \(pizza.precoGrande)"
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
-        }else if indexPath.section == 1 {
             
-            if pizzaP2.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
+        }else if indexPath.section == 1 {
+   
                 
                 let pizza = pizzaP2[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
-        }else if indexPath.section == 2 {
             
-            if pizzaP3.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
+        }else if indexPath.section == 2 {
+       
                 
                 let pizza = pizzaP3[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
+            
         }else if indexPath.section == 3 {
             
-            if pizzaP4.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
+         
                 
                 let pizza = pizzaP4[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
-        }else if indexPath.section == 4 {
             
-            if pizzaE1.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
-                
+        }else if indexPath.section == 4 {
+         
                 let pizza = pizzaE1[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
+            
         }else if indexPath.section == 5 {
             
-            if pizzaE2.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
-                
+        
                 let pizza = pizzaE2[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
-        }else if indexPath.section == 6 {
             
-            if pizzaD.count == 0 {
-                cell.nome.text = "Carregando..."
-            }else{
-                
+        }else if indexPath.section == 6 {
+   
                 let pizza = pizzaD[indexPath.row]
                 cell.nome.text = pizza.nome
+                cell.precoBroto.text = U.converteReal(valor: pizza.precoBroto)
+                cell.precoGrande.text = U.converteReal(valor: pizza.precoGrande)
                 cell.ingredientes.text = ""
                 for ing in pizza.ingredientes{
                     cell.ingredientes.text?.append("\(ing.nome), ")
                 }
-            }
+            
         }
         
         

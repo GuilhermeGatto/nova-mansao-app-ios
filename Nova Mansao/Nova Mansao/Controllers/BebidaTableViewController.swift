@@ -110,40 +110,40 @@ class BebidaTableViewController: UITableViewController {
         case 0:
             
             cell.nome.text = refrigerante2l[indexPath.row].nome
-            cell.preco.text = "R$ \(refrigerante2l[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: refrigerante2l[indexPath.row].preco)
         case 1:
             cell.nome.text = refrigerante600ml[indexPath.row].nome
-            cell.preco.text = "R$ \(refrigerante600ml[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: refrigerante600ml[indexPath.row].preco)
         case 2:
             cell.nome.text = refrigeranteLata[indexPath.row].nome
-            cell.preco.text = "R$ \(refrigeranteLata[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: refrigeranteLata[indexPath.row].preco)
         case 3:
             cell.nome.text = agua[indexPath.row].nome
-            cell.preco.text = "R$ \(agua[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: agua[indexPath.row].preco)
         case 4:
             cell.nome.text = suco[indexPath.row].nome
-            cell.preco.text = "R$ \(suco[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: suco[indexPath.row].preco)
         case 5:
             cell.nome.text = energetico[indexPath.row].nome
-            cell.preco.text = "R$ \(energetico[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: energetico[indexPath.row].preco)
         case 6:
             cell.nome.text = cervejaLata[indexPath.row].nome
-            cell.preco.text = "R$ \(cervejaLata[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: cervejaLata[indexPath.row].preco)
         case 7:
             cell.nome.text = cerveja600ml[indexPath.row].nome
-            cell.preco.text = "R$ \(cerveja600ml[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: cerveja600ml[indexPath.row].preco)
         case 8:
             cell.nome.text = cervejaLongNeck[indexPath.row].nome
-            cell.preco.text = "R$ \(cervejaLongNeck[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: cervejaLongNeck[indexPath.row].preco)
         case 9:
             cell.nome.text = drink[indexPath.row].nome
-            cell.preco.text = "R$ \(drink[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: drink[indexPath.row].preco)
         case 10:
             cell.nome.text = dose[indexPath.row].nome
-            cell.preco.text = "R$ \(dose[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: dose[indexPath.row].preco)
         case 11:
             cell.nome.text = garrafa[indexPath.row].nome
-            cell.preco.text = "R$ \(garrafa[indexPath.row].preco)"
+            cell.preco.text = U.converteReal(valor: garrafa[indexPath.row].preco)
         default:
             print("erro bebida cell")
         }
